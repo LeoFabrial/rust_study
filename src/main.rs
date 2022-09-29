@@ -3,9 +3,8 @@ fn main() {
 }
 
 fn fibonacci(n: u8) -> u128 {
-    let mut result: u128 = 0;
-    let mut prev: u128 = 0;
-    let mut curr: u128 = 1;
+    let agr: (u128, u128, u128) = (0, 0, 1);
+    let (mut result, mut prev, mut curr) = agr;
 
     for i in 1..=n {
         result = prev + curr; // 1, 2
